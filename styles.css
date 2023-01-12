@@ -9,10 +9,21 @@ a:first-child{
 }
 header{
     width: auto;
-    height: 50px;
+    height: auto;
     background-color: rgb(215, 213, 213);
     text-align: right;
 }
+header img{
+    width: 700px;
+    height: 300px;
+    position: relative;
+}
 header a{
      margin-right: 20px;
+}
+img{
+    margin-top: 100px;
+    position: relative;
+    width: 250px;
+    height: 250px;
 }
