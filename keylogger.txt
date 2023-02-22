@@ -1,0 +1,79 @@
+e
+Backspace Pressed
+89zdc<Key.shift: <65505>> Pressed.
+<Key.caps_lock: <65509>> Pressed.
+swkdnksndfm
+jdsnff
+
+Backspace Pressed
+mmans
+Backspace Pressed
+nbjdcnf
+Backspace Pressed
+
+Tab Pressed
+<Key.esc: <65307>> Pressed.
+uo
+<Key.print_screen: <65377>> Pressed.
+<Key.delete: <65535>> Pressed.
+<Key.home: <65360>> Pressed.
+<Key.home: <65360>> Pressed.
+<Key.page_up: <65365>> Pressed.
+<Key.page_down: <65366>> Pressed.
+<Key.end: <65367>> Pressed.
+
+Tab Pressed
+<Key.caps_lock: <65509>> Pressed.
+<Key.caps_lock: <65509>> Pressed.
+<Key.shift: <65505>> Pressed.
+<Key.alt: <65513>> Pressed.
+
+Tab Pressed
+<Key.alt: <65513>> Pressed.
+
+Tab Pressed
+
+Tab Pressed
+chat gpt
+
+Backspace Pressed
+
+Backspace Pressed
+
+Backspace Pressed
+
+Backspace Pressed
+
+Backspace Pressed
+
+Backspace Pressed
+
+Backspace Pressed
+chat.openai.com
+<Key.alt: <65513>> Pressed.
+
+Tab Pressed
+
+Tab Pressed
+<Key.alt: <65513>> Pressed.
+
+Tab Pressed
+
+Tab Pressed
+
+Tab Pressed
+<Key.alt: <65513>> Pressed.
+
+Tab Pressed
+kl
+enter Pressed
+enter Pressed45
+enter Pressed
+Tab Pressed
+<Key.delete: <65535>> Pressed.
+<Key.alt: <65513>> Pressed.
+
+Tab Pressed
+<Key.alt: <65513>> Pressed.
+
+Tab Pressed
